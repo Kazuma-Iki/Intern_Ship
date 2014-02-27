@@ -15,7 +15,19 @@ int main(void){
 	strcpy(retsu2,"UMAI");      mojisu2=4;
 
 	for(i=0;i<mojisu1-(mojisu2-1);i++){
-		if(mojiretsu1[i]=mojiretsu2[0]){
+		if(retsu1[i]==retsu2[0]){
+			int flag=1;
+			for(j=1;j<mojisu2;j++){
+				if(retsu1[i+j]==retsu2[j]){
+				}else{
+					flag=0;
+					break;
+				}
+			}
+			if(flag){
+				printf("true\n");
+				return 0;
+			}
 		}
 	}
 
